@@ -1,15 +1,9 @@
-title: "Gu&iacute;as de C&oacute;digo Abierto"
-description: "Aprende c&oacute;mo crear y hacer que tu proyecto crezca."
-
-# See: docs/translations.md
-locale: es-AR
-translations:
-  en-US:
-    name: English (US)
-    url: https://opensource.guide
+title: "Open Source Guides"
+description: "Learn how to launch and grow your project."
 
 exclude:
   - bin
+  - CNAME
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - docs
@@ -28,7 +22,7 @@ permalink: /:path/
 collections:
   articles:
     output: true
-    permalink: /:name/
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -41,7 +35,7 @@ defaults:
     values:
       layout: article
 
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
